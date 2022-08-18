@@ -1,0 +1,24 @@
+<h3>{{viewTitle}}</h3>
+<form action="/user"  method="POST" autocomplete="off">
+<input type="hidden" name="_id" value="{{user._id}}">
+    <div>
+        <label>Name</label>
+        <input type="text" name="name" value="{{user.name}}">
+    </div>
+    <div>
+        <label>Age</label>
+        <input type="text" name="age" value="{{user.age}}">
+    </div>
+    <div>
+        <label>Phone</label>
+        <input type="text" name="phone" value="{{user.phone}}">
+    </div>
+    <div>
+        <label>Email</label>
+        <input type="text" name="email" value="{{user.email}}">
+    </div>
+    <div>
+        <button type="'submit">Submit</button>
+        <a href="/user/list">View All</a>
+    </div>
+</form>
