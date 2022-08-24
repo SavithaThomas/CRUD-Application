@@ -1,9 +1,13 @@
 <h3>{{viewTitle}}</h3>
-<form action="/user"  method="POST" autocomplete="off">
+<form action="/user/saveuser"  method="POST" autocomplete="off">
 <input type="hidden" name="_id" value="{{user._id}}">
     <div>
         <label>Name</label>
         <input type="text" name="name" value="{{user.name}}">
+    </div>
+    <div>
+        <label>Password</label>
+        <input type="text" name="password" value="{{user.password}}">
     </div>
     <div>
         <label>Age</label>
